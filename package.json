@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jongwooo/dailycoronabot/issues"
   },
-  "homepage": "https://github.com/jongwooo/dailycoronabot#readme"
+  "homepage": "https://github.com/jongwooo/dailycoronabot#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
 }
