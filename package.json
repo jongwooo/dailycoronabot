@@ -26,6 +26,7 @@
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
     "twit": "^2.2.11"
   }
 }
