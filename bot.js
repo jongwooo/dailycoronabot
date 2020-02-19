@@ -1,7 +1,9 @@
+const config = require("./config.js");
 const twit = require("twit");
 const axios = require("axios");
 const cheerio = require("cheerio");
-const config = require("./config.js");
+const moment = require("moment");
+require("moment-timezone");
 
 const client = new twit(config);
 
@@ -30,8 +32,10 @@ getHTML()
 
 
 const tweetPost = res => {
-  const d = new Date();
-  let content = `${d.getFullYear()}년 ${d.getMonth()}월 ${d.getDate()}일 ${d.getHours()}시 기준,\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수] ${
+  moment.tz.setDefault("Asia/Seoul");
+  const date = moment().format("YYYY년 MM월 DD일 HH시");
+  
+  let content = `${date} 기준,\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수] ${
     res[0]
   }\n[확진환자 격리해제수] ${res[1]}\n[바이러스 검사진행수] ${res[2]}`;
 
