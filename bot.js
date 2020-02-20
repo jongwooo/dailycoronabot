@@ -32,23 +32,24 @@ getHTML()
     });
 
     let t = timeList[0];
-    let ts = t.indexOf("(") + 1
-    let time = t.substring(ts, t.indexOf(")", ts)).replace(".", "월 ")
+    let ts = t.indexOf("(") + 1;
+    let time = t.substring(ts, t.indexOf(")", ts)).replace(".", "월 ");
 
-    let c, cs = null;
+    let c,
+      cs = null;
     $countList.each(function(i) {
       c = $(this).text();
       cs = c.indexOf(")") + 1;
-      countList[i] = c.substring(cs, c.indexOf("명", cs))
+      countList[i] = c.substring(cs, c.indexOf("명", cs));
     });
-    
+
     let content = `${date}(${time}),\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수]${countList[0]}명\n[확진환자 격리해제수]${countList[1]}명\n[바이러스 검사진행수]${countList[2]}명`;
 
     return content;
   })
-  .then(res => tweetPost(res));
+  .then(content => tweetPost(content));
 
-const tweetPost = res => {
+const tweetPost = content => {
   client.post("statuses/update", { status: content }, function(error, tweet, response) {
     if (!error) {
       console.log("tweet success: " + content);
