@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://twitter.com/dailycoronabot">
-    <img alt="dailycoronabot" src="https://corona-bot-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/corona.png" width="60" />
+    <img alt="dailycoronabot" src="https://dailycoronabot-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/corona.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -16,7 +16,11 @@
 </h3>
 
 <p align="center">
-  dailycoronabot is a twitter bot to update users about the virus spread progression periodically
+  dailycoronabot is a twitter bot that informs the status of the coronavirus in South Korea
+</p>
+
+<p align="center">
+  <img alt="mockup" src="https://dailycoronabot-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/mockup.png" />
 </p>
 
 ## 🧐 What's inside?
