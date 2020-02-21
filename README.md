@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/jongwooo/dailycoronabot?color=blue"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/jongwooo/dailycoronabot/Post tweet"> <img alt="npm" src="https://img.shields.io/npm/v/npm"> <img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-brightgreen"> <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dailycoronabot?style=social">
+  <img alt="GitHub" src="https://img.shields.io/github/license/jongwooo/dailycoronabot?color=blue"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/jongwooo/dailycoronabot/Post tweet"> <img alt="npm" src="https://img.shields.io/npm/v/npm"> <img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-brightgreen"> <a href="https://twitter.com/dailycoronabot"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dailycoronabot?style=social"></a>
 </p>
 
 <p align="center">
@@ -53,9 +53,9 @@ A quick look at the top-level files and directories you'll see in a dailycoronab
 
 6.  **`LICENSE`**: dailycoronabot is licensed under the MIT license.
 
-7. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+7.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-8. **`README.md`**: A text file containing useful reference information about your project.
+8.  **`README.md`**: A text file containing useful reference information about your project.
 
 ## 📝 License
 
