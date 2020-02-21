@@ -20,6 +20,10 @@
 </p>
 
 <p align="center">
+  <img alt="GitHub" src="https://img.shields.io/github/license/jongwooo/dailycoronabot?color=blue"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/jongwooo/dailycoronabot/Post tweet"> <img alt="npm" src="https://img.shields.io/npm/v/npm"> <img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-brightgreen"> <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dailycoronabot?style=social">
+</p>
+
+<p align="center">
   <img alt="mockup" src="https://dailycoronabot-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/mockup.png" />
 </p>
 
