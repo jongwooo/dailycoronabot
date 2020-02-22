@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/jongwooo/dailycoronabot?color=blue"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/jongwooo/dailycoronabot/Post tweet"> <img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-brightgreen"> <a href="https://twitter.com/dailycoronabot"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dailycoronabot?style=social"></a>
+  <a href="LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/jongwooo/dailycoronabot?color=blue"></a> <a href="https://github.com/jongwooo/dailycoronabot/actions"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/jongwooo/dailycoronabot/Post tweet"></a> <a href="https://github.com/jongwooo/dailycoronabot/pulls"><img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-brightgreen"></a> <a href="https://twitter.com/dailycoronabot"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dailycoronabot?style=social"></a>
 </p>
 
 <p align="center">
