@@ -43,7 +43,7 @@ getHTML()
       countList[i] = c.substring(cs, c.indexOf("명", cs));
     });
 
-    let content = `${date}(${time}),\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수]${countList[0]}명\n[확진환자 격리해제수]${countList[1]}명\n[국내확진자 사망자수]${countList[2]}명\n[바이러스 검사진행수]${countList[3]}명\n\n#코로나바이러스감염증 #국내확진자 #현황`;
+    let content = `${date}(${time}),\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수]${countList[0]}명\n[확진환자 격리해제수]${countList[1]}명\n[국내확진자 사망자수]${countList[2]}명\n[바이러스 검사진행수]${countList[3]}명\n\n#코로나바이러스감염증 #국내확진자`;
 
     return content;
   })
