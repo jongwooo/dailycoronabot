@@ -5,11 +5,12 @@ const cheerio = require("cheerio");
 const moment = require("moment");
 require("moment-timezone");
 
+const URL_SECRET = process.env.URL_SECRET;
 const client = new twit(config);
 
 const getHTML = async () => {
   try {
-    return await axios.get("http://ncov.mohw.go.kr/bdBoardList.do");
+    return await axios.get(URL_SECRET);
   } catch (e) {
     console.error(e);
   }
