@@ -25,10 +25,7 @@
   </a> 
   <a href="https://github.com/jongwooo/dailycoronabot/actions">
     <img alt="GitHub Workflow Status" src="https://github.com/jongwooo/dailycoronabot/workflows/Post%20tweet/badge.svg">
-  </a> 
-  <a href="https://github.com/jongwooo/dailycoronabot/pulls">
-    <img alt="PRs" src="https://img.shields.io/badge/PRs-welcome-brightgreen">
-  </a> 
+  </a>
   <a href="https://twitter.com/dailycoronabot">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dailycoronabot?style=social">
   </a>
