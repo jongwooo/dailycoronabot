@@ -37,7 +37,7 @@ getHTML()
     let time = t.substring(ts, t.indexOf(")", ts)).replace(".", "월 ");
 
     $countList.each(function(i) {
-      countList[i] = $(this).text().replace(" 명", "명");
+      countList[i] = $(this).text();
     });
 
     let content = `${date}(${time}),\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수] ${countList[0]}\n[확진환자 격리해제수] ${countList[1]}\n[국내확진자 사망자수] ${countList[2]}\n[바이러스 검사진행수] ${countList[3]}\n\n#코로나바이러스감염증 #국내확진자`;
