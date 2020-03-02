@@ -40,30 +40,30 @@
 A quick look at the top-level files and directories you'll see in a dailycoronabot project.
 
     .
-    ├── .github
+    ├── .github/workflows
     ├── node_modules
     ├── .gitignore
+    ├── LICENSE
+    ├── README.md
     ├── bot.js
     ├── config.js
-    ├── LICENSE
-    ├── package.json
-    └── README.md
+    └── package.json
 
-1.  **`/.github`**: This directory contains settings about Github Actions.
+1.  **`/.github/workflows`**: This directory contains settings about Github Actions.
 
 2.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-3.  **`bot.js`**: This is a file that crawls information about a coronavirus and tweets it.
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-4.  **`config.js`**: This file imports environment variables from the GitHub Secrets.
+4.  **`LICENSE`**: dailycoronabot is licensed under the MIT license.
 
-5.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+5.  **`README.md`**: A text file containing useful reference information about your project.
 
-6.  **`LICENSE`**: dailycoronabot is licensed under the MIT license.
+6.  **`bot.js`**: This is a file that crawls information about a coronavirus and tweets it.
 
-7.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+7.  **`config.js`**: This file imports environment variables from the GitHub Secrets.
 
-8.  **`README.md`**: A text file containing useful reference information about your project.
+8.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 ## 📝 License
 
