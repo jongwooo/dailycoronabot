@@ -53,11 +53,7 @@ getHTML()
 
 const tweetPost = content => {
   if (content) {
-    client.post("statuses/update", { status: content }, function(
-      error,
-      tweet,
-      response
-    ) {
+    client.post("statuses/update", { status: content }, (error) => {
       if (!error) {
         console.log(`tweet success: ${content}`);
       } else {
