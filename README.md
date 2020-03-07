@@ -28,8 +28,8 @@
     <img alt="PR Test Status" src="https://github.com/jongwooo/dailycoronabot/workflows/PR%20Test/badge.svg">
   </a>
   -->
-  <a href="https://github.com/jongwooo/dailycoronabot/actions">
-    <img alt="GitHub Workflow Status" src="https://github.com/jongwooo/dailycoronabot/workflows/Post%20tweet/badge.svg">
+  <a href="https://github.com/jongwooo/dailycoronabot/actions?query=workflow%3A%22Post+Tweet%22">
+    <img alt="GitHub Workflow Status" src="https://github.com/jongwooo/dailycoronabot/workflows/Post%20Tweet/badge.svg">
   </a>
   <a href="https://twitter.com/dailycoronabot">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/dailycoronabot?style=social">
