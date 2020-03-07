@@ -1,4 +1,4 @@
-name: Post tweet
+name: Post Tweet
 
 on:
   schedule:
@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Tweet
         env:
           CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
