@@ -20,11 +20,13 @@ getHTML()
 	.then(html => {
 		try {
 			let countList = [];
+			let comparedList = [];
 			let timeList = [];
 
 			const $ = cheerio.load(html.data);
-			const $countList = $("table.num tbody tr").children("td");
-			const $timeList = $("div.content div").children("p.s_descript");
+			const $countList = $("ul.liveNum li").children("span.num");
+			const $comparedList = $("ul.liveNum li").children("span.before");
+			const $timeList = $("div.live_left h2 a").children("span.livedate");
 
 			moment.tz.setDefault("Asia/Seoul");
 			const date = moment().format("M월 DD일 HH시");
@@ -35,13 +37,32 @@ getHTML()
 
 			let t = timeList[0];
 			let ts = t.indexOf("(") + 1;
-			let time = t.substring(ts, t.indexOf(")", ts)).replace(".", "월 ");
+			let time = t
+				.substring(ts, t.indexOf(",", ts))
+				.replace(".", "월 ")
+				.replace(".", "일");
 
 			$countList.each(function(j) {
-				countList[j] = `${$(this).text()} 명`;
+				let countListContent = $(this).text();
+
+				if (countListContent.includes("(누적)")) {
+					countListContent = countListContent.replace("(누적)", "");
+				}
+
+				countList[j] = `${countListContent} 명`;
 			});
 
-			let content = `${date}(${time}),\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수] ${countList[0]}\n[확진환자 격리해제수] ${countList[1]}\n[바이러스 격리진행수] ${countList[2]}\n[국내확진자 사망자수] ${countList[3]}\n\n#힘내라_대한민국 #응원해요_의료진\n#코로나바이러스감염증 #국내확진자`;
+			$comparedList.each(function(k) {
+				let comparedListContent = $(this).text();
+
+				if (comparedListContent.includes("전일대비 ")) {
+					comparedListContent = comparedListContent.replace("전일대비 ", "");
+				}
+
+				comparedList[k] = `${comparedListContent}`;
+			});
+
+			let content = `${date}(${time}),\n대한민국의 코로나바이러스 현황\n\n[확진환자수] ${countList[0]}${comparedList[0]}\n[격리해제수] ${countList[1]}${comparedList[1]}\n[격리진행수] ${countList[2]}${comparedList[2]}\n[사망자수]   ${countList[3]}${comparedList[3]}\n\n#힘내라_대한민국 #응원해요_의료진\n#코로나바이러스감염증 #국내확진자`;
 
 			return content;
 		} catch (error) {
