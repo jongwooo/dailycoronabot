@@ -23,8 +23,8 @@ getHTML()
 			let timeList = [];
 
 			const $ = cheerio.load(html.data);
-			const $countList = $("table.num tr").children("td.w_bold");
-			const $timeList = $("div.bvc_txt").children("p.s_descript");
+			const $countList = $("table.num tbody tr").children("td");
+			const $timeList = $("div.content div").children("p.s_descript");
 
 			moment.tz.setDefault("Asia/Seoul");
 			const date = moment().format("M월 DD일 HH시");
@@ -38,10 +38,10 @@ getHTML()
 			let time = t.substring(ts, t.indexOf(")", ts)).replace(".", "월 ");
 
 			$countList.each(function(j) {
-				countList[j] = $(this).text();
+				countList[j] = `${$(this).text()} 명`;
 			});
 
-			let content = `${date}(${time}),\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수] ${countList[0]}\n[확진환자 격리해제수] ${countList[1]}\n[국내확진자 사망자수] ${countList[2]}\n[바이러스 검사진행수] ${countList[3]}\n\n#힘내라_대한민국 #응원해요_의료진\n#코로나바이러스감염증 #국내확진자`;
+			let content = `${date}(${time}),\n대한민국의 코로나바이러스 현황\n\n[바이러스 확진환자수] ${countList[0]}\n[확진환자 격리해제수] ${countList[1]}\n[바이러스 격리진행수] ${countList[2]}\n[국내확진자 사망자수] ${countList[3]}\n\n#힘내라_대한민국 #응원해요_의료진\n#코로나바이러스감염증 #국내확진자`;
 
 			return content;
 		} catch (error) {
