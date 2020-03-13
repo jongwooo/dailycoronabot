@@ -59,7 +59,12 @@ getHTML()
 					comparedListContent = comparedListContent.replace("전일대비 ", "");
 				}
 
-				comparedListContent = comparedListContent.replace("+ ", "+");
+				if (comparedListContent.includes("+ ")) {
+					comparedListContent = comparedListContent.replace("+ ", "+");
+				} else if (comparedListContent.includes("- ")) {
+					comparedListContent = comparedListContent.replace("- ", "-");
+				}
+
 				comparedList[k] = `${comparedListContent}`;
 			});
 
