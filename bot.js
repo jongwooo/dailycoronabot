@@ -26,7 +26,7 @@ getHTML()
 			const $ = cheerio.load(html.data);
 			const $countList = $("ul.liveNum li").children("span.num");
 			const $comparedList = $("ul.liveNum li").children("span.before");
-			const $timeList = $("div.live_left h2 a").children("span.livedate");
+			const $timeList = $("div.liveNumOuter h2 a").children("span.livedate");
 
 			moment.tz.setDefault("Asia/Seoul");
 			const date = moment().format("M월 DD일 HH시");
