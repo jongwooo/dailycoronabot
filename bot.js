@@ -24,8 +24,9 @@ getHTML()
 			let timeList = [];
 
 			const $ = cheerio.load(html.data);
-			const $countList = $("ul.liveNum li").children("span.num");
-			const $comparedList = $("ul.liveNum li").children("span.before");
+			const $liveNum = $("ul.liveNum li");
+			const $countList = $liveNum.children("span.num");
+			const $comparedList = $liveNum.children("span.before");
 			const $timeList = $("div.liveNumOuter h2 a").children("span.livedate");
 
 			moment.tz.setDefault("Asia/Seoul");
