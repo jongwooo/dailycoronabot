@@ -64,7 +64,7 @@ getHTML()
 				comparedList[j] = `${comparedListContent}`;
 			});
 
-			let content = `${date} (${time}),\n대한민국의 코로나바이러스 현황\n\n[확진환자] ${countList[0]} ${comparedList[0]}\n[격리해제] ${countList[1]} ${comparedList[1]}\n[격리진행] ${countList[2]} ${comparedList[2]}\n[사망자수] ${countList[3]} ${comparedList[3]}\n\n#힘내라_대한민국 #응원해요_의료진\n#코로나바이러스감염증 #국내확진자`;
+			let content = `${date} (${time}),\n대한민국의 코로나바이러스 현황\n\n[누적확진] ${countList[0]} ${comparedList[0]}\n[격리해제] ${countList[1]} ${comparedList[1]}\n[격리진행] ${countList[2]} ${comparedList[2]}\n[사망자수] ${countList[3]} ${comparedList[3]}\n\n#힘내라_대한민국 #응원해요_의료진\n#코로나바이러스감염증 #국내확진자`;
 
 			return content;
 		} catch (error) {
