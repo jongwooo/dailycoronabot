@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/node,linux,macos,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=node,linux,macos,visualstudiocode
+# Created by https://www.gitignore.io/api/node,linux,macos,webstorm,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=node,linux,macos,webstorm,visualstudiocode
 
 ### Linux ###
 *~
@@ -158,4 +158,7 @@ temp/
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/node,linux,macos,visualstudiocode
+### WebStorm ###
+.idea/
+
+# End of https://www.gitignore.io/api/node,linux,macos,webstorm,visualstudiocode
