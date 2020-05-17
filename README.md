@@ -23,11 +23,9 @@
   <a href="LICENSE">
     <img alt="GitHub" src="https://img.shields.io/github/license/jongwooo/dailycoronabot?color=blue">
   </a> 
-  <!--
-  <a href="https://github.com/jongwooo/dailycoronabot/actions?query=workflow%3A%22PR+Test%22">
-    <img alt="PR Test Status" src="https://github.com/jongwooo/dailycoronabot/workflows/PR%20Test/badge.svg">
+  <a href="https://www.codefactor.io/repository/github/jongwooo/dailycoronabot">
+    <img alt="CodeFactor" src="https://www.codefactor.io/repository/github/jongwooo/dailycoronabot/badge">
   </a>
-  -->
   <a href="https://github.com/jongwooo/dailycoronabot/actions?query=workflow%3A%22Post+Tweet%22">
     <img alt="GitHub Workflow Status" src="https://github.com/jongwooo/dailycoronabot/workflows/Post%20Tweet/badge.svg">
   </a>
