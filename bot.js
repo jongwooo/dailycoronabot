@@ -19,14 +19,15 @@ const getHTML = async () => {
 getHTML()
 	.then(html => {
 		try {
-			let countList = [];
-			let comparedList = [];
-
 			const $ = cheerio.load(html.data);
-			const $liveNum = $("ul.liveNum li");
-			const $countList = $liveNum.children("span.num");
-			const $comparedList = $liveNum.children("span.before");
-			const $timeList = $("div.liveNumOuter h2 a").children("span.livedate");
+			const $vaccinePercent = $("div.vaccine_list ul li.percent");
+			const $countList = $("div.occurrenceStatus table.ds_table tbody tr td span").eq(3);
+			const $timeList = $("div.occurrenceStatus h2 span.livedate");
+
+			let firstVaccine = $vaccinePercent.eq(0).text();
+			let secondVaccine = $vaccinePercent.eq(1).text();
+
+			let countList = $countList.text();
 
 			moment.tz.setDefault("Asia/Seoul");
 			const date = moment().format("M월 DD일 HH시");
@@ -38,33 +39,7 @@ getHTML()
 				.replace(".", "월 ")
 				.replace(".", "일");
 
-			$countList.each(function(i) {
-				let countListContent = $(this).text();
-
-				if (countListContent.includes("(누적)")) {
-					countListContent = countListContent.replace("(누적)", "");
-				}
-
-				countList[i] = `${countListContent} 명`;
-			});
-
-			$comparedList.each(function(j) {
-				let comparedListContent = $(this).text();
-
-				if (comparedListContent.includes("전일대비 ")) {
-					comparedListContent = comparedListContent.replace("전일대비 ", "");
-				}
-
-				if (comparedListContent.includes("+ ")) {
-					comparedListContent = comparedListContent.replace("+ ", "+");
-				} else if (comparedListContent.includes("- ")) {
-					comparedListContent = comparedListContent.replace("- ", "-");
-				}
-
-				comparedList[j] = `${comparedListContent}`;
-			});
-
-			let content = `${date} (${time}),\n대한민국의 코로나바이러스 현황\n\n[누적확진] ${countList[0]} ${comparedList[0]}\n[격리해제] ${countList[1]} ${comparedList[1]}\n[격리진행] ${countList[2]} ${comparedList[2]}\n[사망자수] ${countList[3]} ${comparedList[3]}\n\n#사회적_거리두기 #힘내라_대한민국\n#코로나바이러스감염증 #국내확진자`;
+			let content = `${date} (${time}),\n대한민국의 코로나바이러스 현황\n\n[1차 접종] ${firstVaccine}\n[접종완료] ${secondVaccine}\n[일일확진] ${countList}명\n\n#위드_코로나 #단계적_일상회복\n#코로나바이러스감염증 #국내확진자`;
 
 			return content;
 		} catch (error) {
