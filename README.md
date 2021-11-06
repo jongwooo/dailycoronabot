@@ -35,7 +35,7 @@
 </p>
 
 <p align="center">
-  <img alt="mockup" src="https://dailycoronabot-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/mockup.png" />
+  <img alt="mockup" src="./assets/mockup.png" />
 </p>
 
 ## 🧐 What's inside?
