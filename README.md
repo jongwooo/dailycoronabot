@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://twitter.com/dailycoronabot">
-    <img alt="dailycoronabot" src="https://dailycoronabot-bucket.s3.ap-northeast-2.amazonaws.com/assets/images/corona.png" width="60" />
+    <img alt="dailycoronabot" src="./assets/corona.png" width="60" />
   </a>
 </p>
 <h1 align="center">
