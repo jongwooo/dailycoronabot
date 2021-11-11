@@ -59,7 +59,7 @@ A quick look at the top-level files and directories you'll see in a dailycoronab
 
 1.  **`/.github/workflows`**: This directory contains settings about Github Actions.
 
-2.  **`/assets`**: This directory contains the logo of this service. 
+2.  **`/assets`**: This directory contains the logo of this service.
 
 3.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
@@ -75,7 +75,7 @@ A quick look at the top-level files and directories you'll see in a dailycoronab
 
 9.  **`README.md`**: A text file containing useful reference information about your project.
 
-10.  **`bot.js`**: This is a file that crawls information about a coronavirus and tweets it.
+10. **`bot.js`**: This is a file that crawls information about a coronavirus and tweets it.
 
 11. **`config.js`**: This file imports environment variables from the GitHub Secrets.
 
