@@ -42,7 +42,7 @@ getHTML()
 				.replace(".", "월 ")
 				.replace(".", "일");
 
-			let content = `${date} (${structuredTime}),\n대한민국의 코로나바이러스 현황\n\n[일일 사망자] ${todaysDeath} 명\n[재원 위중증] ${todaysSeverePatient} 명\n[신규 입원자] ${todaysNormalPatient} 명\n[일일 확진자] ${todaysCases} 명\n\n#위드_코로나 #단계적_일상회복\n#코로나바이러스감염증 #국내확진자`;
+			let content = `${date} (${structuredTime}),\n대한민국의 코로나바이러스 현황\n\n[오늘 사망자] ${todaysDeath} 명\n[재원 위중증] ${todaysSeverePatient} 명\n[신규 입원자] ${todaysNormalPatient} 명\n[오늘 확진자] ${todaysCases} 명\n\n#위드_코로나 #단계적_일상회복\n#코로나바이러스감염증 #국내확진자`;
 
 			return content;
 		} catch (error) {
