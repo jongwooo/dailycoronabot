@@ -24,3 +24,13 @@ jobs:
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
           URL_SECRET: ${{ secrets.URL_SECRET }}
         run: npm start
+
+      - name: Notify failure
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          author_name: Notify failure
+          fields: repo,action,workflow
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        if: failure()
