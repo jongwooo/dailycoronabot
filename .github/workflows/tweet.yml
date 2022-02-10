@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Install dependencies
-        run: npm ci
+        run: yarn install
       - name: Tweet
         env:
           CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
@@ -23,7 +23,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
           URL_SECRET: ${{ secrets.URL_SECRET }}
-        run: npm start
+        run: yarn start
 
       - name: Notify failure
         uses: 8398a7/action-slack@v3

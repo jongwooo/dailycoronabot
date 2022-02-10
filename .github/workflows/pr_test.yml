@@ -16,11 +16,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: npm ci
+        run: yarn install
       - name: lint
-        run: npm run lint
+        run: yarn run lint
       - name: format
-        run: npm run format
+        run: yarn run format
       - name: If fail
         uses: actions/github-script@0.2.0
         with:
