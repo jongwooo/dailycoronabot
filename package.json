@@ -5,9 +5,8 @@
 	"main": "bot.js",
 	"scripts": {
 		"format": "prettier --check  \"**/*.{md,js,json,yml}\"",
-		"lint": "eslint .",
-		"prettier": "prettier --write  \"**/*.{md,js,json,yml}\"",
-		"start": "node bot.js"
+		"format:fix": "prettier --write  \"**/*.{md,js,json,yml}\"",
+		"start": "yarn node bot.js"
 	},
 	"repository": {
 		"type": "git",
