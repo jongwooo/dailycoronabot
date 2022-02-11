@@ -1,37 +1,37 @@
 {
-	"name": "dailycoronabot",
-	"version": "1.0.0",
-	"description": "dailycoronabot is a twitter bot to update users about the virus spread progression periodically",
-	"main": "bot.js",
-	"scripts": {
-		"format": "prettier --check  \"**/*.{md,js,json,yml}\"",
-		"format:fix": "prettier --write  \"**/*.{md,js,json,yml}\"",
-		"start": "yarn node bot.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/jongwooo/dailycoronabot.git"
-	},
-	"keywords": [
-		"coronavirus",
-		"twitter",
-		"bot"
-	],
-	"author": "Jongwoo Han <han980817@gmail.com>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/jongwooo/dailycoronabot/issues"
-	},
-	"homepage": "https://github.com/jongwooo/dailycoronabot#readme",
-	"dependencies": {
-		"axios": "^0.21.4",
-		"cheerio": "^1.0.0-rc.10",
-		"moment": "^2.24.0",
-		"moment-timezone": "^0.5.27",
-		"twit": "^2.2.11"
-	},
-	"devDependencies": {
-		"prettier": "^1.19.1"
-	},
-	"packageManager": "yarn@3.1.1"
+  "name": "dailycoronabot",
+  "version": "1.0.0",
+  "description": "dailycoronabot is a twitter bot to update users about the virus spread progression periodically",
+  "main": "bot.js",
+  "scripts": {
+    "format": "prettier --check  \"**/*.{md,js,json,yml}\"",
+    "format:fix": "prettier --write  \"**/*.{md,js,json,yml}\"",
+    "start": "yarn node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongwooo/dailycoronabot.git"
+  },
+  "keywords": [
+    "coronavirus",
+    "twitter",
+    "bot"
+  ],
+  "author": "Jongwoo Han <han980817@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jongwooo/dailycoronabot/issues"
+  },
+  "homepage": "https://github.com/jongwooo/dailycoronabot#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cheerio": "^1.0.0-rc.10",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "packageManager": "yarn@3.1.1"
 }
