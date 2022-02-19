@@ -1,4 +1,4 @@
-const config = require('./config.js')
+const config = require('./config')
 const twit = require('twit')
 const axios = require('axios')
 const cheerio = require('cheerio')

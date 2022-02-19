@@ -2,11 +2,11 @@
   "name": "dailycoronabot",
   "version": "1.0.0",
   "description": "dailycoronabot is a twitter bot to update users about the virus spread progression periodically",
-  "main": "bot.js",
+  "main": "src/app.js",
   "scripts": {
     "format": "prettier --check  \"**/*.{md,js,json,yml}\"",
     "format:fix": "prettier --write  \"**/*.{md,js,json,yml}\"",
-    "start": "yarn node bot.js"
+    "start": "yarn node src/app.js"
   },
   "repository": {
     "type": "git",
