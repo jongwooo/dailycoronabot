@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://twitter.com/dailycoronabot">
-    <img alt="dailycoronabot" src="./assets/corona.png" width="60" />
+    <img alt="dailycoronabot" src="src/assets/corona.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -35,7 +35,7 @@
 </p>
 
 <p align="center">
-  <img alt="mockup" src="./assets/mockup.png" />
+  <img alt="mockup" src="src/assets/mockup.png" />
 </p>
 
 ## 📝 License
