@@ -1,12 +1,11 @@
-const config = require('./config')
-const twit = require('twit')
 const axios = require('axios')
 const cheerio = require('cheerio')
 const moment = require('moment')
 require('moment-timezone')
 
-const URL_SECRET = process.env.URL_SECRET
-const client = new twit(config)
+const { tweetPost } = require('./api')
+
+const { URL_SECRET } = process.env
 
 const getHTML = async () => {
   try {
@@ -47,15 +46,3 @@ getHTML()
     }
   })
   .then(content => tweetPost(content))
-
-const tweetPost = tweet => {
-  if (tweet) {
-    client.post('statuses/update', { status: tweet }, error => {
-      if (!error) {
-        console.log(`tweet success: ${tweet}`)
-      } else {
-        console.error(`tweet failed: ${error}`)
-      }
-    })
-  }
-}
