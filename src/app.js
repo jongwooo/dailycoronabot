@@ -34,12 +34,20 @@ getHTML()
       const startIndex = rawTime.indexOf('(') + 1
       const lastIndex = rawTime.indexOf(',', startIndex)
 
-      let structuredTime = rawTime
+      const structuredTime = rawTime
         .substring(startIndex, lastIndex)
         .replace('.', '월 ')
         .replace('.', '일')
 
-      return `${date} (${structuredTime}),\n대한민국의 코로나바이러스 현황\n\n[오늘 사망자] ${todaysDeath} 명\n[재원 위중증] ${todaysSeverePatient} 명\n[신규 입원자] ${todaysNormalPatient} 명\n[오늘 확진자] ${todaysCases} 명\n\n#코로나바이러스감염증 #국내확진자`
+      let tweetText = `${date} (${structuredTime}),\\n`
+      tweetText += `대한민국의 코로나바이러스 현황\n\n`
+      tweetText += `[오늘 사망자] ${todaysDeath} 명\n`
+      tweetText += `[재원 위중증] ${todaysSeverePatient} 명\n`
+      tweetText += `[신규 입원자] ${todaysNormalPatient} 명\n`
+      tweetText += `[오늘 확진자] ${todaysCases} 명\n\n`
+      tweetText += `#코로나19 #국내확진자`
+
+      return tweetText
     } catch (error) {
       console.error(`crawling failed: ${error}`)
       return null
