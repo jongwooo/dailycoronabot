@@ -39,7 +39,7 @@ getHTML()
         .replace('.', '월 ')
         .replace('.', '일')
 
-      let tweetText = `${date} (${structuredTime}),\\n`
+      let tweetText = `${date} (${structuredTime}),\n`
       tweetText += `대한민국의 코로나바이러스 현황\n\n`
       tweetText += `[오늘 사망자] ${todaysDeath} 명\n`
       tweetText += `[재원 위중증] ${todaysSeverePatient} 명\n`
