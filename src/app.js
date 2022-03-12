@@ -45,7 +45,7 @@ getHTML()
       tweetText += `[재원 위중증] ${todaysSeverePatient} 명\n`
       tweetText += `[신규 입원자] ${todaysNormalPatient} 명\n`
       tweetText += `[오늘 확진자] ${todaysCases} 명\n\n`
-      tweetText += `#코로나19 #국내확진자`
+      tweetText += `#코로나19 #국내확진자 #COVID19`
 
       return tweetText
     } catch (error) {
