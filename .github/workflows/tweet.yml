@@ -5,17 +5,39 @@ on:
     - cron: '0 * * * *'
 
 jobs:
-  run:
+  tweet:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Node.js 14.x
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: 14.x
+          node-version: ${{ matrix.node-version }}
+
+      - name: Get Yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo '::set-output name=dir::$(yarn config get cacheFolder)'
+
+      - name: Cache Yarn cache files
+        uses: actions/cache@v3
+        id: yarn-cache
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-Node-v${{ matrix.node-version }}-Yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-Node-v${{ matrix.node-version }}-Yarn-
+
       - name: Install dependencies
+        if: |
+          steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
+
       - name: Tweet
         env:
           CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
