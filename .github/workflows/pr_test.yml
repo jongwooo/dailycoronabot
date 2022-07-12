@@ -20,8 +20,7 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
 
-      - name: Cache Yarn cache files
-        uses: actions/cache@v3
+      - uses: actions/cache@v3
         id: yarn-cache
         with:
           path: |
