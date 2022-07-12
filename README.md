@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://twitter.com/dailycoronabot">
-    <img alt="dailycoronabot" src="static/images/corona.png" width="60" />
+    <img alt="dailycoronabot" src="https://jongwooo.s3.ap-northeast-2.amazonaws.com/dailycoronabot/corona.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -35,7 +35,7 @@
 </p>
 
 <p align="center">
-  <img alt="mockup" src="static/images/mockup.png" />
+  <img alt="mockup" src="https://jongwooo.s3.ap-northeast-2.amazonaws.com/dailycoronabot/mockup.png" />
 </p>
 
 ## 📝 License
