@@ -1,7 +1,6 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
-const moment = require('moment')
-require('moment-timezone')
+const moment = require('moment-timezone')
 
 const { tweetPost } = require('./api')
 
@@ -27,8 +26,7 @@ getHTML()
       const todaysNormalPatient = $getCoronaInfo.eq(2).text()
       const todaysCases = $getCoronaInfo.eq(3).text()
 
-      moment.tz.setDefault('Asia/Seoul')
-      const date = moment().format('M월 DD일 HH시')
+      const date = moment().tz('Asia/Seoul').format('M월 DD일 HH시')
 
       const rawTime = $getTime.text()
       const startIndex = rawTime.indexOf('(') + 1
