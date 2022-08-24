@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["axios", "npm:0.27.2"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
-            ["moment-timezone", "npm:0.5.34"],\
+            ["moment-timezone", "npm:0.5.35"],\
             ["prettier", "npm:2.7.1"],\
             ["twit", "npm:2.2.11"]\
           ],\
@@ -229,7 +229,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dailycoronabot", "workspace:."],\
             ["axios", "npm:0.27.2"],\
             ["cheerio", "npm:1.0.0-rc.12"],\
-            ["moment-timezone", "npm:0.5.34"],\
+            ["moment-timezone", "npm:0.5.35"],\
             ["prettier", "npm:2.7.1"],\
             ["twit", "npm:2.2.11"]\
           ],\
@@ -574,10 +574,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["moment-timezone", [\
-        ["npm:0.5.34", {\
-          "packageLocation": "./.yarn/cache/moment-timezone-npm-0.5.34-e4fe2d01f6-12a1d3d52e.zip/node_modules/moment-timezone/",\
+        ["npm:0.5.35", {\
+          "packageLocation": "./.yarn/cache/moment-timezone-npm-0.5.35-27dbb6a14d-0f3907282d.zip/node_modules/moment-timezone/",\
           "packageDependencies": [\
-            ["moment-timezone", "npm:0.5.34"],\
+            ["moment-timezone", "npm:0.5.35"],\
             ["moment", "npm:2.29.1"]\
           ],\
           "linkType": "HARD"\
