@@ -4,8 +4,8 @@
   "description": "dailycoronabot is a twitter bot to update users about the virus spread progression periodically",
   "main": "src/app.js",
   "scripts": {
-    "format": "prettier --check  \"**/*.{md,js,json,yml}\"",
-    "format:fix": "prettier --write  \"**/*.{md,js,json,yml}\"",
+    "format": "prettier --check  \"**/*.{md,js,json}\"",
+    "format:fix": "prettier --write  \"**/*.{md,js,json}\"",
     "start": "yarn node src/app.js"
   },
   "repository": {
