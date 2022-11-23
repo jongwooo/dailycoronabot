@@ -1,13 +1,13 @@
-name: PR Test
+name: PR
 
 on: pull_request
 
 jobs:
-  pr_test:
+  format:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [ 18.x ]
 
     steps:
       - uses: actions/checkout@v3
