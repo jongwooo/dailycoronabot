@@ -1,9 +1,9 @@
-name: PR Test
+name: PR
 
 on: pull_request
 
 jobs:
-  pr_test:
+  format:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -35,10 +35,5 @@ jobs:
               pull_number,
               body:"An error has occurred. Please check your code and try again.",
               event: "REQUEST_CHANGES"
-            })
-            await github.pulls.update({
-              ...context.repo,
-              pull_number,
-              state: "closed"
             })
         if: failure()
