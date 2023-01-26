@@ -24,7 +24,7 @@ jobs:
         run: yarn run format
 
       - name: If fail
-        uses: actions/github-script@v6.3.3
+        uses: actions/github-script@v6.4.0
         with:
           github-token: ${{github.token}}
           script: |
