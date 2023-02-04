@@ -1,3 +1,5 @@
+> **Warning** The dailycoronabot is **deprecated** with no further updates planned.
+
 <p align="center">
   <a href="https://twitter.com/dailycoronabot">
     <img alt="dailycoronabot" src="https://jongwooo.s3.ap-northeast-2.amazonaws.com/dailycoronabot/corona.png" width="60" />
